@@ -9,6 +9,8 @@ declare module 'knex/types/tables' {
       email: string
       birthday: string
       timestamp: string
+      created_at: string
+      updated_at: string
     }
     meals: {
       id: string

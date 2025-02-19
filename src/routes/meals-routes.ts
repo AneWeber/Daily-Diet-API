@@ -72,5 +72,5 @@ export async function mealsRoutes(app: FastifyInstance) {
 
   //put
   //delete
-  //get metrics
+  //get metrics - amount of meals per day - amount of meals on diet
 }
