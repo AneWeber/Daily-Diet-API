@@ -11,11 +11,11 @@ Diet API is a backend application designed to keep track of a diet routine.
 - Isomnia file available.
 
 ## Requirements and Functionalities
-[x] Create a user
-[x] Identify user between transactions using cookies
-[x] Create a meal for a specific user
-[x] A meal must have a title, description, date, and indicate if it is on the diet
-[x] Edit meals
-[x] Delete a meal
-[x] Provide a summary with metrics for each user
-[x] Users can only see and edit meals they have created
+- Create a user
+- Identify user between transactions using cookies
+- Create a meal for a specific user
+- A meal must have a title, description, date, and indicate if it is on the diet
+- Edit meals
+- Delete a meal
+- Provide a summary with metrics for each user
+- Users can only see and edit meals they have created
