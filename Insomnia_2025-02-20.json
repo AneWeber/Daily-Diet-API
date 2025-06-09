@@ -1,1 +1,215 @@
-{"_type":"export","__export_format":4,"__export_date":"2025-02-20T21:08:36.940Z","__export_source":"insomnia.desktop.app:v10.3.1","resources":[{"_id":"req_090cf7f7dd9749b0a3619a8aa5a69452","parentId":"fld_8f40afc4ee7344be994ab3f54fce7e5c","modified":1740085449170,"created":1675274837480,"url":"{{url}}/users","name":"Create User","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Ane\",\n\t\"email\": \"ane@email.com\",\n\t\"birthday\": \"2025-02-16\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1740085449058,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_8f40afc4ee7344be994ab3f54fce7e5c","parentId":"wrk_8ca99c33eb974dc381de218f7240e55c","modified":1740085443254,"created":1740085443254,"name":"User","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1740085443254,"environmentType":"kv","_type":"request_group"},{"_id":"wrk_8ca99c33eb974dc381de218f7240e55c","parentId":null,"modified":1739945702470,"created":1739945702470,"name":"Ignite Node.js API REST","description":"","scope":"collection","_type":"workspace"},{"_id":"req_3cd89c2a9a754c52ab4d8d2f9befd72e","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085628562,"created":1739946563962,"url":"{{url}}/meals/new-meal","name":"Create Meal","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"dinner\",\n\t\"description\": \"lasanha\",\n\t\"isOnDiet\": false,\n\t\"date\": \"2025-12-02\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1674861583390.75,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","parentId":"wrk_8ca99c33eb974dc381de218f7240e55c","modified":1675274834681,"created":1675274834681,"name":"Transactions","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1675274834681,"_type":"request_group"},{"_id":"req_057ffeb94fc1423e98ba19d082b67eff","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085495291,"created":1675275563331,"url":"{{url}}/meals/f4210137-ab4a-4584-a8f8-a714991792e9","name":"Get Meal","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1674448329201.5,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_e31ba66187a24e75955aaeff6b1e53b7","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085506967,"created":1675275391281,"url":"{{url}}/meals/","name":"List Meals","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1674379453511.625,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_b0427f18eb09467181f420ca3333b46d","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085504388,"created":1675275798228,"url":"{{url}}/meals/summary","name":"Get Summary","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1674310577821.75,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_b98dae43dc8f49129f55160c690c4fb3","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085514689,"created":1740085280362,"url":"{{url}}/meals/75ec7156-d149-4428-a9f9-298b3a268688","name":"Delete Meal","description":"","method":"DELETE","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1674310577721.75,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_38e9791a7c4d41ff9ce9faba4d447d8b","parentId":"fld_ff5767765cfa4ca4aedf74fec3d23ffe","modified":1740085582116,"created":1740085526751,"url":"{{url}}/meals/b30ee6c7-4f74-4078-9b1e-e9920cc4c2a2","name":"Put Meal","description":"","method":"PUT","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"snack\",\n\t\"description\": \"mcdonalds\",\n\t\"isOnDiet\": true,\n\t\"date\": \"2025-11-04\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"insomnia/10.3.1"}],"authentication":{},"metaSortKey":-1674310577671.75,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_dff4a5147b9a4590869b434966fda7ea","parentId":"wrk_8ca99c33eb974dc381de218f7240e55c","modified":1675274822475,"created":1675274822475,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1675274822475,"_type":"environment"},{"_id":"jar_05bfadae9bf548c692ba83a55675e3ae","parentId":"wrk_8ca99c33eb974dc381de218f7240e55c","modified":1675279069534,"created":1675274822478,"name":"Default Jar","cookies":[{"key":"sessionId","value":"81dcaa6e-cacf-443d-85aa-f890eaf58c2c","maxAge":604800000,"domain":"localhost","path":"/","hostOnly":true,"creation":"2023-02-01T19:17:49.534Z","lastAccessed":"2023-02-01T19:17:49.534Z","id":"8720411540337754"}],"_type":"cookie_jar"},{"_id":"env_17d032e9da674c1cbe585532f441e5e8","parentId":"env_dff4a5147b9a4590869b434966fda7ea","modified":1675282881837,"created":1675282847988,"name":"Dev","data":{"url":"http://localhost:3333"},"dataPropertyOrder":{"&":["url"]},"color":"#00ff11","isPrivate":false,"metaSortKey":1675282847988,"_type":"environment"},{"_id":"env_6b656ab7d6d048eba4b7e8701392e49e","parentId":"env_dff4a5147b9a4590869b434966fda7ea","modified":1675282886919,"created":1675282853385,"name":"Prod","data":{"url":""},"dataPropertyOrder":{"&":["url"]},"color":"#bb00ff","isPrivate":false,"metaSortKey":1675282853385,"_type":"environment"}]}
+type: collection.insomnia.rest/5.0
+name: DailyDiet API
+meta:
+  id: wrk_b6fbfb58348d47028596dad526e84f29
+  created: 1749442757338
+  modified: 1749442757338
+collection:
+  - name: Transactions
+    meta:
+      id: fld_47b61377b69b4b1b84e811495f4a383b
+      created: 1675274834681
+      modified: 1675274834681
+      sortKey: -1675274834681
+    children:
+      - url: "{{url}}/meals/"
+        name: List Meals
+        meta:
+          id: req_f5a7a9c2f1714a68a9ed5bca9ae38507
+          created: 1675275391281
+          modified: 1749443105321
+          isPrivate: false
+          sortKey: -1674758269843.4375
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/meals/f4210137-ab4a-4584-a8f8-a714991792e9"
+        name: Get Meal
+        meta:
+          id: req_06295e2d874944af973eef4aeb39b161
+          created: 1675275563331
+          modified: 1749443102220
+          isPrivate: false
+          sortKey: -1674654956296.125
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/meals/summary"
+        name: Get Summary
+        meta:
+          id: req_bfdeac0f70434b2497bfe48c12408342
+          created: 1675275798228
+          modified: 1749443111005
+          isPrivate: false
+          sortKey: -1674706613069.7812
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/meals/new-meal"
+        name: Create Meal
+        meta:
+          id: req_3a9e881b635244b699eff6f79cd52b09
+          created: 1739946563962
+          modified: 1749443052230
+          isPrivate: false
+          sortKey: -1674861583390.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "lunch",
+            	"description": "lasanha",
+            	"isOnDiet": false,
+            	"date": "2025-06-02"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/meals/75ec7156-d149-4428-a9f9-298b3a268688"
+        name: Delete Meal
+        meta:
+          id: req_16fbdb4e272e4235962fc2c865e81b77
+          created: 1740085280362
+          modified: 1740085514689
+          isPrivate: false
+          sortKey: -1674310577721.75
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/10.3.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/meals/b30ee6c7-4f74-4078-9b1e-e9920cc4c2a2"
+        name: Put Meal
+        meta:
+          id: req_05bffd6c246e471296067ab54fcd8726
+          created: 1740085526751
+          modified: 1740085582116
+          isPrivate: false
+          sortKey: -1674310577671.75
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "snack",
+            	"description": "mcdonalds",
+            	"isOnDiet": true,
+            	"date": "2025-11-04"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.3.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: User
+    meta:
+      id: fld_77c6e707ab00496f9f4ee49f49f26c6d
+      created: 1740085443254
+      modified: 1740085443254
+      sortKey: -1740085443254
+    children:
+      - url: "{{url}}/users"
+        name: Create User
+        meta:
+          id: req_eb9d80a91aa446b5aff4cb9e7bc60f41
+          created: 1675274837480
+          modified: 1749443040674
+          isPrivate: false
+          sortKey: -1740085449058
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Maria",
+            	"email": "maria@email.com",
+            	"birthday": "2025-02-06"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b8690e194675c4d4442ce905285482ab4100f761
+    created: 1749442757343
+    modified: 1749442982692
+  cookies:
+    - key: sessionId
+      value: b6e910de-99ea-44b6-b5c3-fe91a9ebf048
+      maxAge: 302400
+      domain: localhost
+      path: /
+      hostOnly: true
+      creation: 2025-06-09T04:23:02.691Z
+      lastAccessed: 2025-06-09T04:23:02.691Z
+      sameSite: lax
+      id: 981b3307-407f-4366-aa43-b6b9d71a3da0
+environments:
+  name: Base Environment
+  meta:
+    id: env_b8690e194675c4d4442ce905285482ab4100f761
+    created: 1749442757341
+    modified: 1749442757341
+    isPrivate: false
+  subEnvironments:
+    - name: Dev
+      meta:
+        id: env_25c3578ec5ad4fb185ea5117579508c2
+        created: 1675282847988
+        modified: 1675282881837
+        isPrivate: false
+        sortKey: 1675282847988
+      data:
+        url: http://localhost:3333
+      color: "#00ff11"
