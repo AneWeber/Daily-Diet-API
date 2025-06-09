@@ -1,7 +1,11 @@
 # Diet API
 Diet API is a backend application designed to keep track of a diet routine.
 
-<video controls src="DailyDietAPI - use.mp4" title="DailyDietDemo">This was supposed to be a demo video of the API, but unfortunately it's not working.</video>
+
+
+https://github.com/user-attachments/assets/63d06ea7-fde6-49c5-b400-e12b8d0c0c0f
+
+
 
 ## Technologies Used
 - Node.js
