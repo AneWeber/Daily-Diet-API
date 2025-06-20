@@ -1,26 +1,32 @@
 type: collection.insomnia.rest/5.0
 name: DailyDiet API
 meta:
-  id: wrk_b6fbfb58348d47028596dad526e84f29
-  created: 1749442757338
-  modified: 1749442757338
+  id: wrk_b3c717e8174c4c968d3f7dd5e48d604d
+  created: 1749444393541
+  modified: 1749444393541
+  description: ""
 collection:
   - name: Transactions
     meta:
-      id: fld_47b61377b69b4b1b84e811495f4a383b
+      id: fld_8881ac4f8c914bf38918304f3c2b581c
       created: 1675274834681
       modified: 1675274834681
       sortKey: -1675274834681
+      description: ""
     children:
       - url: "{{url}}/meals/"
         name: List Meals
         meta:
-          id: req_f5a7a9c2f1714a68a9ed5bca9ae38507
+          id: req_be0571bc4fc9426ab5f16d59d9dd222c
           created: 1675275391281
           modified: 1749443105321
           isPrivate: false
+          description: ""
           sortKey: -1674758269843.4375
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -32,12 +38,16 @@ collection:
       - url: "{{url}}/meals/f4210137-ab4a-4584-a8f8-a714991792e9"
         name: Get Meal
         meta:
-          id: req_06295e2d874944af973eef4aeb39b161
+          id: req_aecb5b4a190f43d7b50d290aae3a445b
           created: 1675275563331
           modified: 1749443102220
           isPrivate: false
+          description: ""
           sortKey: -1674654956296.125
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -49,12 +59,16 @@ collection:
       - url: "{{url}}/meals/summary"
         name: Get Summary
         meta:
-          id: req_bfdeac0f70434b2497bfe48c12408342
+          id: req_5a77b8b70f5c408195784daf3299f33f
           created: 1675275798228
           modified: 1749443111005
           isPrivate: false
+          description: ""
           sortKey: -1674706613069.7812
         method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -66,24 +80,28 @@ collection:
       - url: "{{url}}/meals/new-meal"
         name: Create Meal
         meta:
-          id: req_3a9e881b635244b699eff6f79cd52b09
+          id: req_da4db78c014e413db177a96220361b7b
           created: 1739946563962
-          modified: 1749443052230
+          modified: 1749445108205
           isPrivate: false
+          description: ""
           sortKey: -1674861583390.75
         method: POST
         body:
           mimeType: application/json
           text: |-
             {
-            	"name": "lunch",
-            	"description": "lasanha",
-            	"isOnDiet": false,
+            	"name": "breakfast",
+            	"description": "bananas",
+            	"isOnDiet": true,
             	"date": "2025-06-02"
             }
         headers:
           - name: Content-Type
             value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -95,15 +113,19 @@ collection:
       - url: "{{url}}/meals/75ec7156-d149-4428-a9f9-298b3a268688"
         name: Delete Meal
         meta:
-          id: req_16fbdb4e272e4235962fc2c865e81b77
+          id: req_91a9efa32cde41db891325380a91d2ae
           created: 1740085280362
           modified: 1740085514689
           isPrivate: false
+          description: ""
           sortKey: -1674310577721.75
         method: DELETE
         headers:
           - name: User-Agent
             value: insomnia/10.3.1
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -112,13 +134,14 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: "{{url}}/meals/b30ee6c7-4f74-4078-9b1e-e9920cc4c2a2"
+      - url: "{{url}}/meals/584745b3-6b24-48f3-a688-92fc4248d341"
         name: Put Meal
         meta:
-          id: req_05bffd6c246e471296067ab54fcd8726
+          id: req_b54f6c64e55a4e388f194d357870f367
           created: 1740085526751
-          modified: 1740085582116
+          modified: 1749445154964
           isPrivate: false
+          description: ""
           sortKey: -1674310577671.75
         method: PUT
         body:
@@ -135,6 +158,9 @@ collection:
             value: application/json
           - name: User-Agent
             value: insomnia/10.3.1
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -143,33 +169,41 @@ collection:
             send: true
             store: true
           rebuildPath: true
+    scripts:
+      afterResponse: ""
+      preRequest: ""
   - name: User
     meta:
-      id: fld_77c6e707ab00496f9f4ee49f49f26c6d
+      id: fld_62eba782f5ff4fadacfe35ba01c96f71
       created: 1740085443254
       modified: 1740085443254
       sortKey: -1740085443254
+      description: ""
     children:
       - url: "{{url}}/users"
         name: Create User
         meta:
-          id: req_eb9d80a91aa446b5aff4cb9e7bc60f41
+          id: req_3cafbeba0cae421d9f7682a834215251
           created: 1675274837480
-          modified: 1749443040674
+          modified: 1749445317332
           isPrivate: false
+          description: ""
           sortKey: -1740085449058
         method: POST
         body:
           mimeType: application/json
           text: |-
             {
-            	"name": "Maria",
-            	"email": "maria@email.com",
-            	"birthday": "2025-02-06"
+            	"name": "trialuser",
+            	"email": "trial@email.com",
+            	"birthday": "2001-02-06"
             }
         headers:
           - name: Content-Type
             value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -178,34 +212,35 @@ collection:
             send: true
             store: true
           rebuildPath: true
+    scripts:
+      afterResponse: ""
+      preRequest: ""
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_b8690e194675c4d4442ce905285482ab4100f761
+    id: jar_cb34691032d6407a805733e8c52f3465
     created: 1749442757343
     modified: 1749442982692
   cookies:
-    - key: sessionId
+    - id: 981b3307-407f-4366-aa43-b6b9d71a3da0
+      key: sessionId
       value: b6e910de-99ea-44b6-b5c3-fe91a9ebf048
-      maxAge: 302400
       domain: localhost
       path: /
+      secure: false
+      httpOnly: false
       hostOnly: true
-      creation: 2025-06-09T04:23:02.691Z
-      lastAccessed: 2025-06-09T04:23:02.691Z
-      sameSite: lax
-      id: 981b3307-407f-4366-aa43-b6b9d71a3da0
 environments:
   name: Base Environment
   meta:
-    id: env_b8690e194675c4d4442ce905285482ab4100f761
+    id: env_3c0ae734435b48d7a47e8f6c0304145d
     created: 1749442757341
     modified: 1749442757341
     isPrivate: false
   subEnvironments:
     - name: Dev
       meta:
-        id: env_25c3578ec5ad4fb185ea5117579508c2
+        id: env_e5a0faea2c9c4dd2adcec5945ad821e2
         created: 1675282847988
         modified: 1675282881837
         isPrivate: false

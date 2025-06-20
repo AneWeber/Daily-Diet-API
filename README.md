@@ -28,6 +28,8 @@ https://github.com/user-attachments/assets/63d06ea7-fde6-49c5-b400-e12b8d0c0c0f
 
 ## How to try
 - npm install
+- create a .env file using the .env.example as base (*local variables*)
+- npx prisma migrate dev
 - npm run dev
 - Import the Insomnia file into a new Insomnia collection
   - **Create a user:** Update the JSON file with the new user's information.
